@@ -9,7 +9,7 @@ too — it prints a table when stdout is a TTY.
 ## Install
 
 ```bash
-git clone <this repo>
+git clone https://github.com/tylergibbs1/samcli.git
 cd samcli
 npm install
 npm run build
@@ -102,6 +102,13 @@ See [`SKILL.md`](./SKILL.md) for the agent-facing usage guide.
 | `SAM_API_KEY` | **Required.** API key from sam.gov |
 | `SAMCLI_BASE_URL` | Override base URL (e.g. `https://api-alpha.sam.gov` for testing) |
 | `SAMCLI_USER_AGENT` | Override the HTTP User-Agent |
+
+## Development
+
+```bash
+npm run dev -- search --naics 541519 --dry-run   # run from source with tsx
+npm run build                                    # compile to dist/
+```
 
 ## Scope
 
